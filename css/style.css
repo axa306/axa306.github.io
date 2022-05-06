@@ -1,207 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
-
-body{
-  background-color: rgb(0, 67, 120);
-  display: grid;
-  max-width: 960px;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-areas:
-  "header header header"
-  "main main main"
-  "main main main";
-}
-
-main{
-  display: grid;
-  max-width: 960px;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-areas:
-  "dock-img intro flag-img"
-  "geograpy society government";
-  grid-area: main;
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap');
 
 header{
-  background-color: #001b48;
+  background-color: #1d2c3d;
+  display: flex;
   height: 100px;
   width: 100%;
-  padding-bottom: 10px;
-  grid-area: header;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #f2f2f2;
 }
 
 h1{
-  font-family: 'Cormorant Garamond',"Times", serif;
-  font-size: 60px;
-  letter-spacing: 7px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
   color: #ffffff;
-  padding:10px;
-  margin:10px;
-  text-align:center;
+  padding:20px;
+  margin:20px;
+  text-align: left;
 }
 
 h2{
-  font-family: 'Playfair Display', "Arial", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 30px;
-  color: #242ba6;
-  padding: 15px;
-  margin: 15px;
-  text-align: left;
+  letter-spacing: 2px;
+  color: #000000;
+  padding:15px;
+  margin:15px;
 }
 
 h3{
-  font-family: 'Playfair Display', "Arial", sans-serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
-  color: #242ba6;
-  padding: 10px;
-  margin: 10px;
-  text-align: left;
+  letter-spacing: 2px;
+  color: #000000;
+  padding:10px;
+  margin:10px;
 }
 
 p{
-  font-family: 'Arimo', "Arial", sans-serif;
-  font-size: 15px;
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
   color: #000000;
-  padding: 2px;
+  padding:10px;
+  margin:10px;
 }
 
-table{
-  width: 70%;
-  border: 2px;
-  border-collapse: collapse;
-  box-shadow: 0 3px 11px #a9b6d1;
-}
-
-th{
-  font-family: 'Arimo', "Arial", sans-serif;
-  font-size: 15px;
-  color:  #000000;
-  padding: 2px;
-  text-align: center;
-  box-shadow: 0 2px 11px #a9b6d1;
-  background-color: #e6eeff;
-}
-
-td{
-  font-family: 'Arimo', "Arial", sans-serif;
-  font-size: 14px;
-  color:  #000000;
-  padding: 2px;
-  text-align: center;
-  box-shadow: 0 2px 5px #a9b6d1;
-}
-
-ul{
-  font-family: 'Arimo', "Arial", sans-serif;
-  font-size: 15px;
-  color:  #000000;
-  margin: 15px;
-  padding: 5px;
-  background: #e6eeff;
-  padding: 20px;
-  box-shadow: 3px 2px 15px #a9b6d1;
-  width: 290px;
-  border-radius: 35px;
-}
-
- li {
-  background: #d3e7ed;
-  color: #000000;
-  margin: 5px;
-  padding: 2px;
-  width:275px;
-  box-shadow: 0 4px 15px #a9b6d1;
-  border-radius: 25px;
-  list-style-position: inside;
-}
-
-figcaption{
-  font-family: 'Arimo', "Arial", sans-serif;
-  font-size: 10px;
-  color: #ffffff;
-  margin: 5px;
-  padding: 5px;
-}
 
 a:link {
+  text-decoration: none;
   color: #ffffff;
 }
 
 a:visited {
+  text-decoration: none;
   color: #ffffff;
 }
 
 a:hover {
-  color: #ff0000;
+  text-decoration: none;
+  color: #44a5c9;
+  transition: 0.6s;
 }
 
 a:active {
-  color: #ee00ff;
+  text-decoration: none;
+  color: #44a5c9;
 }
 
-#intro{
-  border: 8px solid #b1c4e6;
-  width: 450px;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: #d3e7ed;
-  height:390px;
-  grid-area: intro;
+#class-diagram-image{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: projimage;
+}
+#project-summary{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: projsummary;
 }
 
-#geography{
-  border: 8px solid #b1c4e6;
-  width: 450px;
-  height:600px;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: #d3e7ed;
-  grid-area: geograpy;
+#design-patterns{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: designpatterns;
+}
+#class-diagram{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: classdiagram;
 }
 
-#people-and-society{
-  border: 8px solid #b1c4e6;
-  width: 450px;
-  height:550px;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: rgb(211, 231, 237);
-  grid-area: society;
+#education{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: education;
 }
 
-#government{
-  border: 8px solid #b1c4e6;
-  width: 450px;
-  height:350px;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: #d3e7ed;
-  grid-area: government;
+#work-experience{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: workexp;
+}
+#tech-skill{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: techskill;
 }
 
-.dock-image{
-  width:500px;
-  height: 430px;
-  border: 8px solid #b1c4e6;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: #001b48;
-  grid-area: dock-img;
+#relevant-cw{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: relevantcw;
 }
 
-.flag-image{
+#languages{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: languages;
+}
+
+#about-me{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: aboutme;
+}
+
+#contact-information{
+  padding: 20px;
+  margin: 20px;
+  max-width: 500px;
+  grid-area: contactinfo;
+}
+
+
+
+.resume-main{
+  display: grid;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  ". education"
+  ". workexp"
+  ". techskill"
+  ". relevantcw"
+  ". languages";
+  grid-area: main;
+}
+
+.home-main{
+  display: grid;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  ". aboutme"
+  ". contactinfo";
+  grid-area: main;
+}
+
+
+.project-main{
+  display: grid;
+  max-width: 960px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  ". projsummary"
+  ". designpatterns"
+  ". classdiagram"
+  ". projimage";
+
+  grid-area: main;
+}
+
+.contact-info li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.navigation li{
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+  font-family: 'Quicksand', sans-serif;
+  color:#ffffff;
+  display: inline-block;
+}
+
+.work-list li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tech-skill-list li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.um-list li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+
+}
+
+.nvcc-list li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+
+}
+
+.course-work-table td{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+  text-align: left;
+
+}
+
+.course-work-table {
+border-collapse: collapse;
+min-width: 300px;
+}
+
+.course-work-table th{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px;
+  margin:10px;
   width: 500px;
-  height:300px;
-  border: 8px solid #b1c4e6;
-  padding: 40px;
-  margin: 30px;
-  border-radius: 45px;
-  background-color: #001b48;
-  grid-area: flag-img;
+  text-align: left;
+  font-weight: bolder;
+  background-color: #1d2c3d;
+}
+
+.course-work-table tr:nth-child(even) {
+  background-color: #dbdbdb;
+}
+
+.language-list li{
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  margin:10px;
+}
+
+.side-bar {
+height: 960px;
+width: 325px;
+position: sticky;
+float: left;
+top: 0px;
+background-color: #8395B2;
+display: flex;
+align-items: stretch;
+}
+
+.side-bar li {
+padding: 15px;
+margin: 15px;
+font-size: 20px;
+display: block;
+font-family: 'Quicksand', sans-serif;
+}
+
+.proj-image{
+  padding: 15px;
+  margin: 15px;
 }

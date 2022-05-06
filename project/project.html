@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Project</title>
+  <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="top">
+    <h1>Project</h1>
+    <nav>
+      <ul class="navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../resume/resume.html">Resume</a></li>
+        <li><a href="project.html">Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="side-bar">
+    <nav>
+      <ul>
+        <li><a href="#top">Project summary</a></li>
+        <li><a href="#design-patterns">Design Patterns</a></li>
+        <li><a href="#class-diagram">Class Diagram Overview</a></li>
+        <li><a href="#class-diagram-image">Class Diagram</a></li>
+      </ul>
+    </nav>
+    </section>
+
+  <main class ="project-main">
+    <section id="project-summary">
+      <h2>Project Summary</h2>
+        <p>In CSC: 431: Introduction to Software Engineering, as a team, we were tasked with creating and designing a project. </p>
+        <p>The project is an application that would be an alternative to a bloomberg terminal. It takes the data from filings in the <abbr title="U.S. Securities and Exchange Commission">SEC</abbr>  database and converts it into readable data -- by using graphics and charts -- for all investors in the stock market. </p>
+        <p>An example of how this application would be used is the user would search for a stock by its ticker symbol. Then, the ticker symbol would resolve into a <abbr title="Central Index Key">CIK</abbr> number. With the <abbr title="Central Index Key">CIK</abbr>, it is used to search the <abbr title="U.S. Securities and Exchange Commission">SEC</abbr> database to retrieve <abbr title="Extensible Business Reporting Language files">XBRL</abbr> files. The <abbr title="Extensible Business Reporting Language files">XBRL</abbr> files are then converted into <abbr title="JavaScript Object Notation files">JSON</abbr> files. Finally the <abbr title="JavaScript Object Notation">JSON</abbr> files are used to diplsay graphics and charts for the user.</p>
+        <p>For the final presentation in class, the two section I presented and designed were 'design patterns' and the 'class diagram'.</p>
+    </section>
+
+    <section id="design-patterns">
+      <h2>Design Patterns</h2>
+        <p>For this project, the adapter design pattern and the command design patterns are design patterns that would help the overall design of the project when creating the software. </p>
+        <p>The adapter design pattern would provide an object oriented solution to coverting <abbr title="Extensible Business Reporting Language files">XBRL</abbr> files to <abbr title="JavaScript Object Notation">JSON</abbr>. The adapter design pattern would be an object that is specifically dedicated to translating <abbr title="Extensible Business Reporting Language files">XBRL</abbr> files into <abbr title="JavaScript Object Notation">JSON</abbr>. The object would recieve input from the files that were retrieved from teh <abbr title="U.S. Securities and Exchange Commission">SEC</abbr> database, then they would be converted and sent out as <abbr title="JavaScript Object Notation">JSON</abbr> to the terminal where they would be used to display data in the form of graphics and charts.</p>
+        <p>Two of the main feature in the project are 'Monitor insider holding' and to 'Request fundamentals'. With the command design pattern, these two request features would be encapsulated as objects. This would allow the software design to decouple classes and seperate the request -- request fundamentals and view insider holdings -- from the actual object. The main object would be a stock. </p>
+    </section>
+
+    <section id="class-diagram">
+      <h2>Class Diagram Overview</h2>
+        <p>The image below is the class diagram I designed for this project. With this diagram, I used an object oriented design to provide an outline of how the program would be implemented.</p>
+        <p>The user object would have the ability to search for stock, view insider holding and requst fundamentals. The search object would recieve a ticker symbol as a string and would have the ability to validate it and search for the specified symbol in the datbase.</p>
+        <p>The database would interact with the adapter object by returning the files that are associated with the <abbr title="Central Index Key">CIK</abbr> number. The adapter class would convert and translate the <abbr title="Extensible Business Reporting Language files">XBRL</abbr> files that were retieved and convert them to <abbr title="JavaScript Object Notation">JSON</abbr> to then output the files to the display object.</p>
+        <p>The display object would retrieve the <abbr title="JavaScript Object Notation">JSON</abbr> files and display graphics and charts. The stock is the main object where 'request fundamentals' and 'view insider holdings' are decoupled from the stock class. </p>
+    </section>
+
+    <section id="class-diagram-image">
+      <h2>Class Diagram</h2>
+    <figure class="proj-image">
+      <img src="../images/classdiagram.jpg" alt="class diagram for project"/>
+      <figcaption>Project class diagram</figcaption>
+    </figure>
+    </section>
+
+  </main>
+</body>
+</html>
