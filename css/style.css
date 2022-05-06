@@ -85,6 +85,7 @@ a:active {
   max-width: 500px;
   grid-area: projimage;
 }
+
 #project-summary{
   padding: 20px;
   margin: 20px;
@@ -98,6 +99,7 @@ a:active {
   max-width: 500px;
   grid-area: designpatterns;
 }
+
 #class-diagram{
   padding: 20px;
   margin: 20px;
@@ -153,8 +155,6 @@ a:active {
   grid-area: contactinfo;
 }
 
-
-
 .resume-main{
   display: grid;
   max-width: 960px;
@@ -188,7 +188,6 @@ a:active {
   ". designpatterns"
   ". classdiagram"
   ". projimage";
-
   grid-area: main;
 }
 
@@ -287,11 +286,12 @@ align-items: stretch;
 }
 
 .side-bar li {
+font-family: 'Quicksand', sans-serif;
 padding: 15px;
 margin: 15px;
 font-size: 20px;
 display: block;
-font-family: 'Quicksand', sans-serif;
+
 }
 
 .proj-image{
