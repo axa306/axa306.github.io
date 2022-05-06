@@ -21,7 +21,7 @@ body{
 }
 
 h1{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', "Arial", sans-serif;
   font-size: 40px;
   letter-spacing: 2px;
   color: #ffffff;
@@ -31,7 +31,7 @@ h1{
 }
 
 h2{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', "Arial", sans-serif;
   font-size: 30px;
   letter-spacing: 2px;
   color: #000000;
@@ -40,7 +40,7 @@ h2{
 }
 
 h3{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', "Times", serif;
   font-size: 20px;
   letter-spacing: 2px;
   color: #000000;
@@ -49,7 +49,7 @@ h3{
 }
 
 p{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
   color: #000000;
@@ -192,7 +192,7 @@ a:active {
 }
 
 .contact-info li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin: 10px;
@@ -202,27 +202,27 @@ a:active {
   font-size: 20px;
   padding: 10px;
   margin:10px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', "Arial", sans-serif;
   color:#ffffff;
   display: inline-block;
 }
 
 .work-list li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin: 10px;
 }
 
 .tech-skill-list li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin: 10px;
 }
 
 .um-list li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin:10px;
@@ -230,7 +230,7 @@ a:active {
 }
 
 .nvcc-list li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin:10px;
@@ -238,7 +238,7 @@ a:active {
 }
 
 .course-work-table td{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin:10px;
@@ -252,7 +252,7 @@ min-width: 300px;
 }
 
 .course-work-table th{
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', "Arial", sans-serif;
   font-size: 20px;
   color: #ffffff;
   padding: 10px;
@@ -268,7 +268,7 @@ min-width: 300px;
 }
 
 .language-list li{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo', "Arial", sans-serif;
   font-size: 20px;
   padding: 10px;
   margin:10px;
@@ -286,7 +286,7 @@ align-items: stretch;
 }
 
 .side-bar li {
-font-family: 'Quicksand', sans-serif;
+font-family: 'Quicksand', "Arial", sans-serif;
 padding: 15px;
 margin: 15px;
 font-size: 20px;
